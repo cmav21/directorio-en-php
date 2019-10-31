@@ -6,9 +6,8 @@ describe('Agrega al listado principal de personas el campo “Dirección” y qu
     cy.get('thead > tr > :nth-child(5) > .btn').click()
     cy.get('.col-md-7 > .form-control')
         .type('Cesar')
-    cy.get('.col-md-11 > .form-control')
-        .type('real del valle')
-    cy.get('.modal-footer > .btn-primary').click()
+    cy.get(':nth-child(2) > .col-md-11 > .form-control')
+        .type('Real del valle')
+        cy.get('.modal-footer > .btn-primary').click()
  })
-
 })
